@@ -1,5 +1,8 @@
 # 📖 BookWave - Sistema de Locadora de Livros Online
 
+# 📚 BookWave
+_"Leia onde quiser, quando quiser!"_
+
 Bem-vindo ao projeto da **BookWave**, uma locadora de livros online que proporciona uma experiência simples, prática e eficiente para os amantes da leitura.
 
 Este documento contém todas as **regras de negócio** necessárias para o desenvolvimento do sistema.
@@ -107,72 +110,108 @@ Permitir que usuários possam:
 
 ---
 
-# 📚 BookWave
-_"Leia onde quiser, quando quiser!"_
-
-
 # 🛤️ Fluxo de Telas
-[Início] 
-   ↓
-[Página Inicial] → [Login] → [Página Principal (Usuário)]
-                            ↘︎
-                             [Catálogo] → [Detalhes do Livro] → [Confirmar Aluguel]
-                            ↘︎
-                             [Meus Aluguéis] → [Renovar / Devolver / Avaliar]
-                            ↘︎
-                             [Área Administrativa]
+![Fluxo de Telas](fluxo.svg)
 
+# 📑 Wireframe (Protótipo Visual Simples)
 
-# 🎨 Protótipo Visual Simples (Wireframe)
-
-[BookWave Logo]    [Login] [Cadastro]
+Este documento descreve os wireframes (protótipos visuais simples) das páginas principais do projeto **BookWave**. O objetivo é fornecer uma representação básica e visual das funcionalidades e estrutura das telas.
 
 ---
-| 📚 Destaques do Catálogo |
-| Livro 1 | Livro 2 | Livro 3 |
+
+## Páginas
+
+### 1. **Página Inicial**
+----------------------------------------------------
+| LOGO BookWave        | [Login] [Cadastro]        |
+----------------------------------------------------
+| **Banner**: "Leia onde quiser, quando quiser!"   |
+| [Ver Catálogo] (botão grande)                    |
+----------------------------------------------------
+| **Seção: Destaques**                             |
+| [Livro 1] [Livro 2] [Livro 3] [Livro 4]         |
+----------------------------------------------------
+| **Footer**                                        |
+----------------------------------------------------
+
 ---
 
-<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
-  <style>
-    .box { fill: #f9f9f9; stroke: #333; stroke-width: 2; }
-    .text { font: bold 14px sans-serif; fill: #333; }
-    .arrow { stroke: #333; stroke-width: 2; marker-end: url(#arrowhead); }
-  </style>
+### 2. **Tela de Cadastro/Login**
+---------------------------------------------
+| **LOGIN**       | **CADASTRO**                |
+| Email: _______  | Nome: ________              |
+| Senha: _______  | Email: _______              |
+| [Entrar]        | Telefone: _______           |
+|                 | Endereço: _______           |
+|                 | Data Nasc.: ____            |
+|                 | Senha: _______              |
+|                 | [Cadastrar]                 |
+---------------------------------------------
 
-  <defs>
-    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
-      <polygon points="0 0, 10 3.5, 0 7" fill="#333" />
-    </marker>
-  </defs>
+---
 
-  <!-- Boxes -->
-  <rect class="box" x="300" y="20" width="200" height="40" />
-  <rect class="box" x="300" y="100" width="200" height="40" />
-  <rect class="box" x="100" y="200" width="200" height="40" />
-  <rect class="box" x="500" y="200" width="200" height="40" />
-  <rect class="box" x="300" y="300" width="200" height="40" />
-  <rect class="box" x="300" y="400" width="200" height="40" />
-  <rect class="box" x="100" y="500" width="200" height="40" />
-  <rect class="box" x="500" y="500" width="200" height="40" />
+### 3. **Catálogo de Livros**
+------------------------------------------------
+| [Filtro] [Buscar]                             |
+------------------------------------------------
+| [Capa Livro] | Nome Livro | Autor | [Alugar]  |
+| [Capa Livro] | Nome Livro | Autor | [Alugar]  |
+| [Capa Livro] | Nome Livro | Autor | [Indisponível] |
+------------------------------------------------
+| **Paginação** (1,2,3...)                       |
+------------------------------------------------
 
-  <!-- Texts -->
-  <text class="text" x="330" y="45">Página Inicial</text>
-  <text class="text" x="370" y="125">Login</text>
-  <text class="text" x="140" y="225">Catálogo</text>
-  <text class="text" x="540" y="225">Meus Aluguéis</text>
-  <text class="text" x="340" y="325">Detalhe do Livro</text>
-  <text class="text" x="340" y="425">Área Administrativa</text>
-  <text class="text" x="140" y="525">Alugar Livro</text>
-  <text class="text" x="540" y="525">Avaliar Livro</text>
+---
 
-  <!-- Arrows -->
-  <line class="arrow" x1="400" y1="60" x2="400" y2="100" />
-  <line class="arrow" x1="400" y1="140" x2="200" y2="200" />
-  <line class="arrow" x1="400" y1="140" x2="600" y2="200" />
-  <line class="arrow" x1="200" y1="240" x2="400" y2="300" />
-  <line class="arrow" x1="600" y1="240" x2="400" y2="300" />
-  <line class="arrow" x1="400" y1="340" x2="400" y2="400" />
-  <line class="arrow" x1="400" y1="440" x2="200" y2="500" />
-  <line class="arrow" x1="400" y1="440" x2="600" y2="500" />
-</svg>
+### 4. **Detalhe do Livro**
+----------------------------------------
+| **Capa do Livro**                        |
+| Nome: O Nome do Vento                   |
+| Autor: Patrick Rothfuss                 |
+| Tipo: Físico                            |
+| Disponível: Sim                         |
+| Nota: ★★★★☆                             |
+| [Alugar este Livro] (botão grande)      |
+----------------------------------------
+| **Regras do Aluguel**                   |
+| - 15 dias de aluguel                    |
+| - 1 renovação permitida                 |
+----------------------------------------
+
+---
+
+### 5. **Área do Usuário**
+--------------------------------------------------
+| **Meus Aluguéis**      | [Sair]                  |
+--------------------------------------------------
+| Livro: Nome Livro                               |
+| Prazo restante: 5 dias                         |
+| Botões: [Renovar] [Devolver]                   |
+--------------------------------------------------
+| Livro: Nome Livro                               |
+| Prazo expirado!                                |
+| Botões: [Pagar Multa]                          |
+--------------------------------------------------
+
+---
+
+### 6. **Administração**
+--------------------------------------------------
+| **Painel de Administração**                     |
+| [Cadastrar Livro] [Listar Aluguéis] [Confirmar Devoluções] |
+--------------------------------------------------
+| **Cadastro de Livro**                           |
+| Nome: _____                                    |
+| Autor: _____                                   |
+| Tipo: ( ) Físico ( ) Digital                    |
+| Gênero: ________                               |
+| Upload Capa: [Selecionar Arquivo]               |
+| [Salvar Livro]                                 |
+--------------------------------------------------
+
+---
+
+## Conclusão
+Este protótipo serve como uma base visual para o desenvolvimento das interfaces de usuário do **BookWave**. A navegação entre as telas e os elementos básicos já estão definidos, o que facilita a implementação da aplicação real.
+
 
