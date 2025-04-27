@@ -113,6 +113,8 @@ Permitir que usuários possam:
 # 🛤️ Fluxo de Telas
 ![Fluxo de Telas](fluxo.svg)
 
+![Fluxo de Telas](./ChatGPT%20Image%20Apr%2027,%202025,%2001_27_04%20PM.png)
+
 # 📑 Wireframe (Protótipo Visual Simples)
 
 Este documento descreve os wireframes (protótipos visuais simples) das páginas principais do projeto **BookWave**. O objetivo é fornecer uma representação básica e visual das funcionalidades e estrutura das telas.
