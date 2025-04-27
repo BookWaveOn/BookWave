@@ -111,3 +111,68 @@ Permitir que usuários possam:
 _"Leia onde quiser, quando quiser!"_
 
 
+# 🛤️ Fluxo de Telas
+[Início] 
+   ↓
+[Página Inicial] → [Login] → [Página Principal (Usuário)]
+                            ↘︎
+                             [Catálogo] → [Detalhes do Livro] → [Confirmar Aluguel]
+                            ↘︎
+                             [Meus Aluguéis] → [Renovar / Devolver / Avaliar]
+                            ↘︎
+                             [Área Administrativa]
+
+
+# 🎨 Protótipo Visual Simples (Wireframe)
+
+[BookWave Logo]    [Login] [Cadastro]
+
+---
+| 📚 Destaques do Catálogo |
+| Livro 1 | Livro 2 | Livro 3 |
+---
+
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .box { fill: #f9f9f9; stroke: #333; stroke-width: 2; }
+    .text { font: bold 14px sans-serif; fill: #333; }
+    .arrow { stroke: #333; stroke-width: 2; marker-end: url(#arrowhead); }
+  </style>
+
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333" />
+    </marker>
+  </defs>
+
+  <!-- Boxes -->
+  <rect class="box" x="300" y="20" width="200" height="40" />
+  <rect class="box" x="300" y="100" width="200" height="40" />
+  <rect class="box" x="100" y="200" width="200" height="40" />
+  <rect class="box" x="500" y="200" width="200" height="40" />
+  <rect class="box" x="300" y="300" width="200" height="40" />
+  <rect class="box" x="300" y="400" width="200" height="40" />
+  <rect class="box" x="100" y="500" width="200" height="40" />
+  <rect class="box" x="500" y="500" width="200" height="40" />
+
+  <!-- Texts -->
+  <text class="text" x="330" y="45">Página Inicial</text>
+  <text class="text" x="370" y="125">Login</text>
+  <text class="text" x="140" y="225">Catálogo</text>
+  <text class="text" x="540" y="225">Meus Aluguéis</text>
+  <text class="text" x="340" y="325">Detalhe do Livro</text>
+  <text class="text" x="340" y="425">Área Administrativa</text>
+  <text class="text" x="140" y="525">Alugar Livro</text>
+  <text class="text" x="540" y="525">Avaliar Livro</text>
+
+  <!-- Arrows -->
+  <line class="arrow" x1="400" y1="60" x2="400" y2="100" />
+  <line class="arrow" x1="400" y1="140" x2="200" y2="200" />
+  <line class="arrow" x1="400" y1="140" x2="600" y2="200" />
+  <line class="arrow" x1="200" y1="240" x2="400" y2="300" />
+  <line class="arrow" x1="600" y1="240" x2="400" y2="300" />
+  <line class="arrow" x1="400" y1="340" x2="400" y2="400" />
+  <line class="arrow" x1="400" y1="440" x2="200" y2="500" />
+  <line class="arrow" x1="400" y1="440" x2="600" y2="500" />
+</svg>
+
